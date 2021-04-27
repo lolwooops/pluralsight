@@ -1,0 +1,23 @@
+resnet
+-some initial layers are connected to later layers (skips intermediate layers)
+--> forces model to use residuals
+
+rnn
+great with working with sequences/time series
+store internal states - remember what has occured so far
+-often used with text data
+
+yt = f(xt,yt-1)
+relationships wherep ast values of the effect var drive current values are called auto regressive
+
+feed forward networks cannot learn from the past
+
+regular neuron  --> y = activation(wx+b)
+
+recurrent neuron
+takes in xt and yt-1 and produces yt
+input is a vector but output is as well
+
+--> each r neuron has 2 weight vectors
+
+very prone to exploding/vanishing gradient

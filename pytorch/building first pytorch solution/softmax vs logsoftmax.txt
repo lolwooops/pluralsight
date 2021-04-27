@@ -1,0 +1,3 @@
+softmax minimize crossentropy
+log soft max minimize nll (negative log likelihood)
+-works better irl

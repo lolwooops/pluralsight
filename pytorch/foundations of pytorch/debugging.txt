@@ -1,0 +1,10 @@
+for pytorch
+use pdb - standard python debugger
+instrument code with pdb.set_trace()
+
+for tensorflow
+fetch tensors using Session.run()
+print tensors using tf.Print()
+use tf.Assert
+iterpose python code using tf.py_func()
+use tfdbg to debug graph exec

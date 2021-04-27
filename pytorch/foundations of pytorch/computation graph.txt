@@ -1,0 +1,36 @@
+static - tensorflow - symbolic programming of nn
+-distinct build phase, execute phase
+dynamic - pytorch - imperative programming of nn
+-execute graph as it is being built
+
+symbolic 
+-first define operations then execute
+-define functions abstractly, no actual computation takes place
+-computation explicitly compiled before eval
+java c++
+
+imperative
+-execute performed as operations defined
+-code executed as fn is defined
+-no explicit compilation step before eval
+python
+
+
+static
+-harder to program and debug
+-less flexible - harder to experiment
+-more restricted - computation grpah only shows final results
+-more efficient, easier to optimize
+
+
+
+x = torch.randn(1,10)
+h = torch.randn(1,20)
+w_h = torch.randn(20,20)
+w_x = torch.randn(20,10)
+
+h_prod = torch.mm(w_h,h.t())
+x_prod = torch.mm(w_x,x.t())
+next_h = (h_prod + x_prod).tanh()
+loss = next_h.sum()
+loss.backward()

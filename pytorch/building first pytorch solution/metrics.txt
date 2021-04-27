@@ -1,0 +1,3 @@
+accuracy - TP+TN/num_instances
+precision - accuracy when classifier flags cancer (TP vs FP)
+recall - accuracy when cancer actually present (TP vs FN)
