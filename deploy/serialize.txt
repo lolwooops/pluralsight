@@ -1,0 +1,13 @@
+serializing model
+
+json - model parameters are accessible and intuitive
+fragile, req knowledge of what parameters to serialize 
+
+pickle - can work with any python obj
+joblib - run python fn as pipeline
+-more efficient at storing large multidim numpy arrays
+
+mitigate training serving skew
+-training and pred data processed using the same pipeline
+-serialize data transform operations along with model parameters
+-easy to do with skl using pipelines

@@ -1,0 +1,15 @@
+import pickle
+
+pickle.dump(model,open('FILEPATH/model.pkl','wb'))
+
+pickle_model = pickle.load(open('FILEPATH/model.pkl','rb'))
+
+
+
+import joblib
+
+filename = ..joblib
+
+joblib.dump(model,filename)
+
+joblib_model = joblib.load(filename)

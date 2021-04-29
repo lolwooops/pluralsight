@@ -1,0 +1,39 @@
+import
+read csv
+
+drop
+
+getdummies
+
+x=
+y=
+
+xtrain xtest ytrain xtest
+
+model .fit
+
+training score = model.score
+
+ypred = model.predict
+
+
+
+import json
+model.coef_
+model.intercept_
+
+model_parram={}
+model_param['coef'] = list(model.coef_)
+model_param['intercept'] = model.intercept_.tolist()
+
+json_txt = json.dumps(model_param, indent=4)
+
+with open('FILEPATH/x.txt', 'w') as file:
+	file.write(json_txt)
+
+### unserializing from json
+json_model = lr()
+json_model.coef_ = np.array(json_text['coef'])
+"" intercept_
+y_pred = json_model.predict(x_test)
+r2_score(y_test,y_pred)
