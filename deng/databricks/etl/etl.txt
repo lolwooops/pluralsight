@@ -1,0 +1,28 @@
+scala
+
+val df = spark.read.json([db url])
+
+verify
+
+transform
+
+val specificcolumnsdf = df.select()
+val specificcolumnsdfv2 = df.select()
+
+loading
+
+#specify temp blob storage location for moving data btw dbricks and sql warehouse
+val tempDir = 'wasbs://' + blobcontainer + '@' + blobstorage + '/tempdirs'
+
+val dwdatabase = ''
+val dwserver = '<url>'
+val dwuser = ''
+val dwpass
+val dwjdbcport
+val dwjdbcextraoptions
+val sqldwurl = 'jdbc:sqlserver://' + dwserver +':' + dwjdbcport + ';database=' = dwdatabase+';user' + dwuser + ';password=' = dwpass + ';$dwjdbcextraoptions'
+
+# load transformed dataframe as a table in sql warehouse
+spark.conf.set('spark.sql.parquet.writelegacyformat','true')
+
+renamedcolumnsdf.write.format('com.databricks.spark.sqldw').option('url',sqldwurlsmall).option('dbtable','sampletable').option('forward_spark_azure_storage_credentials','true').option('tempdir', tempdir).mode('overwrite').save()

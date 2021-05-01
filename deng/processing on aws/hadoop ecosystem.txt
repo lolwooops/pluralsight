@@ -1,0 +1,52 @@
+big data
+req
+-scalability
+-fault tolerance
+-recoverability
+
+hdfs - hadoop distribute file system - storage (128mb)
+mapreduce - processing - aggregating/combining data
+yarn - resources
+
+MR - uses hdfs for intermediate data; spark uses in-memory
+mr - slower; spark - faster
+cheaper vs expensive
+good for batch process - good for iterative processing
+
+mllib included in spark classification, recommenders clustering
+mahout runs on spark -- classification, recommenders and clustering
+mxnet - pref by amazin and req gpus
+tensorflow
+
+
+interacting with a hadoop cluster -- notebooks
+hue - hadoop user experience -- esp good for sql queries, managing files in hdfs
+
+spark sql vs presto
+
+
+more hadoop tools
+hive - date warehouse tool
+-etl
+-queries
+-2 components -- metascore (src of truth on schemas, compatible w glue), hcatalog(helps connectivity)
+
+hbase - nosql running on top of hdfs
+
+spark 
+-supports scala, java, python
+-batch processing
+-use livy to submit spark jobs with rest api
+
+
+batch
+-process large columes of data
+-data collected over time
+-optimized for large data
+stream
+- process small volumes
+-collected continuously
+-optimized for instant results
+
+>>spark streaming
+

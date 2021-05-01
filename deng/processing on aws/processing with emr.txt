@@ -1,0 +1,37 @@
+batch processing with emr
+-flexibility
+-big data
+-s3 to store permanently
+-not replacement for relational db
+
+key pair >> services > ec2 > key instances
+
+security group for master > select > inbound rules > edit > add rule > ssh > my ip
+
+> emr shall
+create database sales
+use sales;
+create external table details (
+sale_id int, name string)
+row format delimited
+fields terminated by ','
+stored as textfile
+location ''
+
+steps > add step > hive program
+
+
+
+stream processing wiht emr
+--working with data that loses value fast
+
+need 
+-low latency
+-hgigh throughput
+-fault tolerance
+
+data source -> kinesis -> emr -> db
+
+create new cluster -> adv op -> only spark 
+>shell
+tmux

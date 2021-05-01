@@ -1,0 +1,9 @@
+data pipeline 
+data nodes - input and output locations, data types
+activities - work to do on nodes
+others - schedule, resources, preconditions, actions
+
+sales.csv
+
+aws services > analytics, data pipeline > create pipeline > templates > set output/input folder > edit in architect
+> add policy for first time > search bar - data pipeline

@@ -1,0 +1,55 @@
+runs code snippets
+serverless
+stateless
+
+scalability (auto)
+integrations with other aws services
+pay for what you use
+
+integrations
+-s3 - trigger with storage related events
+-iot - trigger with custom rule
+-sns - trigger by sub to a topic
+
+
+lambda >> create function
+
+add trigger (for integrations) 
+- always focus or triggers happen more often
+
+if long processes - use ec2
+
+
+
+etl issues
+-more data
+-changing formats and schemas
+-complicated operations (managing infrastructure,handling errors)
+
+etl with glue
+-etl focused
+-discover and catalog data
+-serverless
+-fully managed spark cluster
+
+-- easy scaling
+
+
+
+glue etl job
+services >> aws glue >> side bar - etl >> jobs > add job
+>>create new target data set > create tables > data store s3 > format csv > target path >> map source columns to target columns
+
+
+use cases
+data catalog
+-unifying view of data
+-data source for other services
+etl
+-batch and stream processing
+-prepare data for analysis
+
+anticases
+-many small jobs running often
+-customize cluster
+

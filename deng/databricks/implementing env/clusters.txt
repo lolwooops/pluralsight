@@ -1,0 +1,8 @@
+> common task >> create clusters
+
+> shell
+source databrickscli/bin/activate
+code [filepath]/cd-cl02.json
+databricks clusters create --json-file [filepath]/bd-cl02.json
+databricks clusters list
+

@@ -1,0 +1,8 @@
+> create jobs
+> select notebook
+> schedule
+
+> shell
+[enter env]
+databricks jobs create --json --file [filepath] bd-job01.json
+databricks jobs run-now --job-idx

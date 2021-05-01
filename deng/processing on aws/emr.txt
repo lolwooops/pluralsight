@@ -1,0 +1,29 @@
+emr = elastic map reduce
+
+emr managed hadoop and spark service
+-good with aws integrations
+-decouples storage of compute 
+
+hdfs - default block size of 128 mb
+local file system
+emr file system (hdfs on s3)
+
+3 types of nodes
+-master - runs yarn (manage resources)  - can have multiple
+-core nodes - as many as needed - runs hdfs 
+	-scale down slowly to avoid losing data on hdfs
+-task nodes - accelerating data processing speed esp for cpu intense
+
+optimizing instance types
+batch processing - general purpose (m4)
+machine learning - compute (c4)
+deep learning - gpu instances (p3)
+large hdfs - storage instance (d2)
+
+on demand -- highest flex, highest cost
+reserved -- highest commitment, discounts
+
+
+spot -> testing
+on demand, spot task -> production
+reserved, spot task - predictable workload
